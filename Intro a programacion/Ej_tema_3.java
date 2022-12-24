@@ -1,4 +1,4 @@
-public class Main {
+class Main {
   public void main(String[] args) {
     Coche miCoche = new Coche();
     miCoche.agregarPuertas(1);
