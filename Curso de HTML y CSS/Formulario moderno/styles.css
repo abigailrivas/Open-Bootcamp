@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap'); 
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #161717;
+    color: white;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.google-btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background-color: #1A73EB;
+    border-radius: 5px;
+    height: 40px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.google-btn:hover, .twitter-btn:hover{
+    opacity: 0.75;
+}
+
+.google-btn picture{
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.google-btn picture img{
+    width: 100%;
+}
+
+.google-btn span{
+    color: white;
+    font-weight: 500;
+}
+
+.twitter-btn{
+    background-color: #eee;
+    border: none;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.twitter-btn picture{
+    padding: 8px;
+}
+
+.twitter-btn picture img{
+    width: 16px;
+}
+
+.separator{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.separator hr{
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.separator span{
+    color: #8b8b8b;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-inputs{
+    width: 100%;
+    display: flex;
+    column-gap: 14px;
+}
+
+label{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label span{
+    font-weight: 500;
+}
+
+label input{
+    height: 20px;
+    background-color: #212121;
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 12pt;
+    border-radius: 10px;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+label input:hover, label input:focus{
+    background-color: #454045;
+    border: 1px solid #8b8b8b;
+}
+
+input::placeholder{
+    color: #8b8b8b;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox input[type="checkbox"]{
+    background-color: #212121;
+    width: 20px;
+}
+
+.checkbox span{
+    font-weight: 400;
+}
+
+.cta{
+    background-color: #EA4C89;
+    color:white;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cta:hover{
+    opacity: 0.75;
+}
