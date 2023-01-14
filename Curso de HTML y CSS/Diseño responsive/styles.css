@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+}
+
+.vertical-bar{
+    display: flex;
+    gap: 2rem;
+    background-color: pink;
+    align-items: center;
+    padding: 1rem;
+}
+
+.main-section{
+    display: flex;
+    background-color:violet;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        flex-direction: column;
+    }
+    .vertical-bar{
+        order: 1;
+        flex-direction: column;
+    }
+}
